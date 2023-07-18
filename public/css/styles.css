@@ -1,0 +1,295 @@
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }    
+  
+  body {
+    font-family: roboto;
+  }
+  
+  header{
+    background-color: #EAC926;
+    padding: 20px;
+    width: 100vw;
+    margin: auto;
+  }
+  .contenedor-header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 10px;
+    max-width: 1200px;
+    text-align: center;
+    margin:auto
+  }
+  .logo {
+    width: 50%;
+  }
+  .buscador{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 50%;
+  }
+  .buscador-input{
+    border: solid 1px var(--light-gray);
+    display: block;
+    width: 100%;
+    padding: 7px 35px 7px 7px;
+    border-radius: 5px;
+    height: 40px;
+    font-size: 1em;
+  }
+  .buscador-boton{
+    position: absolute;
+    right: 2px;
+    height: 60%;
+    background-color: #ffffff;
+    border: none;
+    border-left: solid 1px var(--light-gray);
+    color: var(--gray);
+    cursor: pointer;
+  }
+  
+  
+  .buy-cuotas{
+    font-family: 'roboto', Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
+  }
+  .hamburguer-boton{
+    background-color: #1259c3;
+    color:#ffffff;
+    display: block;
+    max-width: 60px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin:auto;
+  }
+  .listas{
+    display: none;
+  }
+  .listas ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .listas a {
+    text-decoration: none;
+    color: #222222;
+    padding: 5px 0;
+    font-size: 14px;
+  }
+  .banner {
+    width: 100vw;
+    text-align: center;
+    margin: auto;
+  }
+  main{
+    background-color: #ebebeb;
+  }
+  .container-producto{
+    max-width: 1200px;
+    width: 100vw;
+    padding: 15px;
+    margin: auto;
+    margin-top: -4px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .producto{
+    display: block;
+    background-color: #ffffff;
+    width: 100%;
+    border: solid 1px #ffffff;
+    margin: auto;
+    margin-bottom: 25px;  
+   }
+  .producto-descripcion{
+    position: relative;
+    padding: 0 15px 0 15px;
+  }
+  .precios{
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .descuentos {
+    font-size: 18px;
+    color: #39b54a;
+    font-style: normal;
+    margin-left: 10%;
+  }
+  .elemento {
+  display: none;
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #666;
+  }
+  .visita,
+  .ofertas {
+    font-size: 24px;
+    width: 95%;
+    color: #666;
+  }
+  .imagen {
+    width: 100%;
+    border-bottom: solid 1px #ffffff;
+    margin: auto;
+    border-radius: 10px;
+  }
+  
+  .fa-truck{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    color: #39b54a;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+    top: -30px; 
+   }
+  
+   .fa-truck:hover {
+    transform: rotate(-90deg);
+    transition: 1s;
+   }
+  
+  
+   footer {
+    background-color: white;
+    width: 100%;
+    margin: 0px;
+  }
+  .vistaFooter{
+    text-align: center;
+    padding: 10px;
+  }
+  .vistaFooter h4{
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .fa-credit-card{
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+    display: block;
+    text-align: center;
+  
+  }
+  .fa-gift{
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+    display: block;
+    text-align: center;
+  
+  }
+  .fa-user-shield{
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+    display: block;
+    text-align: center;
+  
+  }
+  .copyright{
+    display: flex;
+    align-items: flex-end;
+    text-align: left; 
+  }
+  
+  @media(min-width: 361px){
+    .hamburguer-boton{
+      display: none;
+    }
+    .contenedor-header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo{
+        width: 40%;
+    }
+    .buy-cuotas {
+        text-align: right;
+        width: 30%;
+        font-size: 11px;
+    }
+    .buscador {
+        display: flex;
+        align-items: center;
+        width: 30%;
+    }
+    .buscador-input {
+        font-size: 1em;
+    }
+    .listas{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+    .listas ul {
+        display: flex;
+    }
+    .listas li {
+        margin: 0 5px;
+        font-size: 11px;
+    }
+    .listas a {
+        font-size: 11px;
+    }
+    .producto {
+        width: 45%;
+    }
+    .producto:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .producto:hover .elemento{
+      display: block; 
+    }
+  }
+  
+  
+  @media(min-width: 769px){
+    .hamburguer-boton{
+      display: none;
+    }
+    .logo {
+        width: 250px;
+    }
+    .contendor-header,
+    .listas {
+        max-width: 1200px;
+        margin: auto
+    }
+    .contendor-header{
+        align-items: center;
+    }
+    .producto {
+        width: 20%;
+    }
+    .buy-cuotas {
+        font-size: 18px;
+    }
+    .listas {
+        margin-top: 30px;
+    }
+    .listas li {
+        margin: 0 10px;
+        font-size: 19px;
+    }
+    .listas a {
+        font-size: 19px;
+    } 
+  }
