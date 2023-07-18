@@ -4,6 +4,8 @@
     padding-right: 30vw;
     background-color: rgb(228, 223, 223);
     text-align: center;
+    display: block;
+    margin-top: 0em;
   }
   .formulario {
     margin-bottom: 45px;
